@@ -14,19 +14,20 @@ Use Postman:
 
      body{
      "name": "xyz",
-     "rollno": 12345,
-     "branch": "ABC",
-     "mobile": 1234567890
+     "id": 2,
+     "department": "ABC",
+     "address": "pqr"
      }
 3.UPDATE request(update): put(localhost:5000/update)
 
-  here rollno is primary key...
+  here id is primary key...
   
-     body{
-      "name": "xyzqwert",
-     "rollno": 12345,
-     "branch": "ABCfe",
-     "mobile": 1267890
+      body{
+     "name": "xyzhj",
+     "id": 2,
+     "department": "hjnABC",
+     "address": "pjbjr"
+     }
      
         }
-4.DELETE request(delete): delete(localhost:5000/remove) body{ "rollno": 12345 }
+4.DELETE request(delete): delete(localhost:5000/remove) body{ "id": 2 }
