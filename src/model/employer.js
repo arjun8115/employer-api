@@ -7,7 +7,17 @@ const EmployerSchema=new mongoose.Schema({
 	id:{
 		type:Number,
 		required:true
+	},
+	department:{
+		type:String,
+		required:true
+	},
+	address:{
+		type:String,
+		required:true
 	}
+
+
 	
 }); 
 

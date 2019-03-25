@@ -37,6 +37,8 @@ app.post('/add',(req,res)=>{
 		var employer=new Employer();
 			employer.name=req.body.name;
 			employer.id=req.body.id;
+			employer.department=req.body.department;
+			employer.address=req.body.address;
 			
 
 		
@@ -64,6 +66,8 @@ app.put('/update',(req,res)=>{
 		}
 			employer.name=req.body.name;
 			employer.id=req.body.id;
+			employer.department=req.body.department;
+			employer.address=req.body.address;
 			
 
 		employer.save(function(err){
